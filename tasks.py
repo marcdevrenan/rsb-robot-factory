@@ -57,7 +57,7 @@ def fill_and_submit_robot_orders(order: str):
         page.click('button:text("Order")')
         
         if page.is_visible('div.alert.alert-danger'):
-            logging.error(f'Unexpected error with order {order['Order number']}, trying again...')
+            logging.error(f'Unexpected error with order {order["Order number"]}, trying again...')
         else:
             break
         
